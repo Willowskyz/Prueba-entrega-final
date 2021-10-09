@@ -96,7 +96,7 @@ h1,h2,h3 {
     text-align: left;
     background-image: url(../img/golden.jpg);
     background-repeat: no-repeat;
-    background-size:100% 100%; 
+    background-size:100% 100%;
     background-attachment: local;
     height: 250px;
     position: relative;
@@ -198,33 +198,38 @@ h1,h2,h3 {
     color: var(--oscuro);
     font-weight: bold;
 }
-@media (min-width: 768px) {
+
+
 .formulario {
-    background-color: var(--gris);
-    width: min(60rem, );
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-}
-.formulario fieldset {
-    border: none;
+        background-color: var(--gris);
+        width: min(60rem; 100%); /*Acá me toma un error respecto al 100% pero es la unica forma que encontre que lo tome responsive al formulario*/
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1rem;
 }
 
+
+.formulario fieldset {
+        border: none;
+    }
+
+
 .formulario legend {
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: var(--primario);
-}
+            text-align: center;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--primario);
+ }
+
 @media (min-width: 768px) {
+    
     .formulario-campo {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto auto 20rem;
-        column-gap: 1rem; 
+        column-gap: 1rem;
     }
     /*Con :nth-child me evito crear 2 subclases para los campos de Correo y Mensaje*/
     .campo:nth-child(3) {

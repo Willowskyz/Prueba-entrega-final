@@ -229,14 +229,12 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
-  .formulario {
-    background-color: var(--gris);
-    width: 60rem;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
-  }
+.formulario {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .formulario fieldset {
