@@ -198,7 +198,7 @@ h1,h2,h3 {
     color: var(--oscuro);
     font-weight: bold;
 }
-
+@media (min-width: 768px) {
 .formulario {
     background-color: var(--gris);
     width: min(60rem, );
@@ -206,7 +206,7 @@ h1,h2,h3 {
     padding: 2rem;
     border-radius: 1rem;
 }
-
+}
 .formulario fieldset {
     border: none;
 }
